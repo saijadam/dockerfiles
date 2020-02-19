@@ -1,4 +1,4 @@
-FROM fedora
+FROM ubuntu
 
 MAINTAINER saimtech@gmail.com
 
