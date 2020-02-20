@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install curl -y
 RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 
-RUN curl -O http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
+RUN curl -O http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz -H 'Cache-Control: no-cache' 
 RUN tar -xzvf apache*.tar.gz
 RUN mv apache*/* /opt/tomcat/.
 
